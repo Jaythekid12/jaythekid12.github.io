@@ -1,0 +1,294 @@
+
+/* For all pages*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+	background-image: url('../assets/images/background.avif'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+	
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    font-size: 0.7em; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px; 
+    line-height: 20px;
+}
+
+
+/* for index page */
+
+/* for image of me in index */
+.jevonimage {
+    text-align: center;
+    margin: 20px;
+}
+
+.jevonimage img {
+    border: 5px solid #000;
+    width: 200px; 
+    height: 200px;
+    object-fit: cover;
+}
+
+/* for utech link */
+.utech {
+    background-image: url('../assets/images/utech.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.utech h2 {
+	color: #000000
+}
+.utech p {
+    margin: 0;
+}
+
+.utech a {
+    color: #FF0000; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* for professional page */
+
+.VM-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.VM {
+  flex: 1; 
+  padding: 20px;
+  border: 1px solid #ccc; 
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 48%;
+}
+
+/* for resume */
+.resume h2 {
+    text-align: center;
+}
+
+.resume img {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #000; 
+    border-radius: 8px; 
+	width: 80%;
+}
+
+/* for carrer goals */
+.career {
+  border: 2px solid #333;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  margin: 20px 0; 
+}
+
+
+
+/* for personality page */
+.trait{
+	border: 2px solid #333;
+	padding: 20px;
+	border-radius: 8px;
+	background-color: #f4f4f4;
+	margin: 20px 0; 
+}
+.trait h2{
+	color: #4CAF50;
+	border-bottom: 2px solid #4CAF50;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+.trait p{
+	margin-bottom: 20px;
+}
+
+.quote {
+	border: 2px solid #333;
+	padding: 20px;
+	border-radius: 8px;
+	background-color: #f4f4f4;
+	margin: 20px 0; 
+}
+
+.quote h2{
+	color: #4CAF50;
+	border-bottom: 2px solid #4CAF50;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+.quote p{
+	margin-bottom: 20px;
+}
+
+
+.personality {
+	border: 2px solid #333;
+	padding: 20px;
+	border-radius: 8px;
+	background-color: #f4f4f4;
+	margin: 20px 0; 
+}
+
+.personality h2{
+	color: #4CAF50;
+	border-bottom: 2px solid #4CAF50;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+.personality p{
+	margin-bottom: 20px;
+}
+
+.personality figure {
+	display: block;
+	text-align: center;
+}
+
+.personality figure img {
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.personality figure figcaption {
+	margin-top: 10px;
+	color: #888;
+	font-style: italic;
+}
+
+.personality h3 {
+	margin-top: 40px;
+	color: #4CAF50;
+	border-bottom: 1px solid #4CAF50;
+	padding-bottom: 5px;
+}
+
+/* Personal development page */
+
+ .chapter {
+	background-color: #f9f9f9;
+	border-left: 4px solid #f4b400;
+	padding: 15px;
+	margin-bottom: 5px;
+    border-radius: 5px;
+	margin-top: 10px
+}
+
+.chapter h3 {
+	margin-top: 0;
+}
+
+.reflection {
+	font-style: italic;
+	background-color: #fff9e6;
+	padding: 10px;
+	border-left: 4px solid #ffd966;
+	margin-top: 5px;
+	margin-bottom: 20px
+}
+
+.degree {
+	background-color: #f0f8ff;
+	border: 1px solid #e0e0e0;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.degree ul {
+	padding-left: 30px;
+
+}
+
+.skill {
+	padding: 10px;
+	border-left: 3px solid #0077cc;
+	background-color: #e6f7ff;
+	margin-bottom: 15px;
+	border-radius: 5px;
+}
+
+
+
+/* Story Board*/
+
+.pdf {
+	width: 100%;
+	aspect-ratio: 4 / 3;
+}
+
+.pdf,
+	html,
+	body {
+	height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+/* all page*/
+ h2,
+    h3 {
+        text-align: center;
+    }
+
+    h2 {
+        color: green;
+    }
