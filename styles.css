@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-	background-image: url('../assets/images/background.avif'); 
+	background-image: url('background.avif'); 
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; 
@@ -72,7 +72,7 @@ footer {
 
 /* for utech link */
 .utech {
-    background-image: url('../assets/images/utech.jpeg');
+    background-image: url('utech.jpeg');
     background-size: cover;
     background-position: center;
     padding: 20px;
