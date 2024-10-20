@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="productstyle.css">
+</head>
+<body>
+	<header>
+		<img src="assets/logo.webp" alt="Logo" id="logo" style="width:50px; height:auto;">
+		<h1>Timely Cuts</h1>
+		<button id="logout-btn">Logout</button> 
+	</header>
+
+	<h2>Our Watches</h2>
+
+    <div class="products-container">
+
+        <div class="product" data-id="1">
+            <img src="Assets/watch1.jpeg" alt="watch1">
+            <h3>Curren Watch</h3>
+            <p>CURREN Original Brand Stainless Steel Band Wrist <br> Price: $120000</p>
+            <button class="add-to-cart" data-id="1" data-name="Curren Watch" data-price="120000">Add to Cart</button>
+        </div>
+        <div class="product" data-id="2">
+            <img src="Assets/watch2.jpeg" alt="watch2">
+            <h3>Stainless Steal Sporty chronograph</h3>
+            <p>Stainless Steal Strap Sporty chronograph<br> Price: $150000</p>
+            <button class="add-to-cart" data-id="2" data-name="Sporty chronograph" data-price="150000">Add to Cart</button>
+        </div>
+        <div class="product" data-id="3">
+            <img src="Assets/watch3.jpeg" alt="watch3">
+            <h3>Stainless Steel Quartz </h3>
+            <p>Poedagar 985 Men Watch Green Dial Business Stainless Steel Quartz <br> Price: $900000</p>
+            <button class="add-to-cart" data-id="3" data-name="Stainless Steel Quartz " data-price="900000">Add to Cart</button>
+        </div>
+        <div class="product" data-id="4">
+            <img src="Assets/watch4.jpeg" alt="watch4">
+            <h3>Chronograph Quartz Men Watch</h3>
+            <p> Luxury Chronograph Quartz Men Watch Waterproof Sport Wrist Watch Men Stainless <br> Price: $800000</p>
+            <button class="add-to-cart" data-id="4" data-name="hronograph Quartz Men Watch" data-price="800000">Add to Cart</button>
+        </div>
+        <div class="product" data-id="5">
+            <img src="Assets/watch5.jpeg" alt="watch5">
+            <h3>WWMALL-Men Watch </h3>
+            <p> WWMALL-Men Watch Luxury Brand Business Waterproof Quartz Watch Men C  <br> Price: $700000</p>
+            <button class="add-to-cart" data-id="5" data-name="WWMALL-Men Watch " data-price="700000">Add to Cart</button>
+        </div>
+        <div class="product" data-id="6">
+            <img src="Assets/watch6.png" alt="watch6">
+            <h3>NAVIFORCE 9202L Sports Watch </h3>
+            <p> NAVIFORCE 9202L Sports Watch Men Fashion Casual Quartz Wristwatch Male Date Waterproof Leather  <br> Price: $9000000</p>
+            <button class="add-to-cart" data-id="6" data-name="NAVIFORCE 9202L Sports Watch" data-price="9000000">Add to Cart</button>
+        </div>
+		<div class="product" data-id="7">
+            <img src="Assets/watch7.jpg" alt="watch7">
+            <h3>Gold Stainless Steel</h3>
+            <p> Gold Stainless Steel Watch  <br> Price: $90000</p>
+            <button class="add-to-cart" data-id="7" data-name="Gold Stainless Steel Watch" data-price="90000">Add to Cart</button>
+        </div>
+		<div class="product" data-id="8">
+            <img src="Assets/watch8.jpeg" alt="watch8">
+            <h3>CWC Sea Falcon Chronograph  </h3>
+            <p> CWC Sea Falcon Chronograph Watch <br> Price: $980000</p>
+            <button class="add-to-cart" data-id="8" data-name="NAVIFORCE 9202L Sports Watch" data-price="980000">Add to Cart</button>
+        </div>
+		<div class="product" data-id="9">
+            <img src="Assets/watch9.jpg" alt="watch9">
+            <h3>Stauer Globehopper Automatic Watch </h3>
+            <p> 46mm Rose Gold Finished Case, Blue Face with Sun & Moon Phase Dial, World Time Zones and Black Leather Strap<br> Price: $123000</p>
+            <button class="add-to-cart" data-id="9" data-name="Stauer Globehopper Automatic Watch " data-price="123000">Add to Cart</button>
+        </div>
+		<div class="product" data-id="10">
+            <img src="Assets/watch10.jpg" alt="watch10">
+            <h3>OLEVS Men Multifunction Watch </h3>
+            <p>Multi Dial Waterproof Luminous Chronograph Men's Watch with Date Gift for Men,Stainless Steel Watches for Men,Classic Men Wrist Watch <br> Price: $80000</p>
+            <button class="add-to-cart" data-id="10" data-name="OLEVS Men Multifunction Watch" data-price="80000">Add to Cart</button>
+        </div>
+		<div class="product" data-id="11">
+            <img src="Assets/watch11.jpg" alt="watch11">
+            <h3> Rolex Oyster  </h3>
+            <p> Rolex Oyster Perpetual Submariner Date 116613 <br> Price: $60000</p>
+            <button class="add-to-cart" data-id="11" data-name=" Rolex Oyster" data-price="6100000">Add to Cart</button>
+        </div>
+		<div class="product" data-id="12">
+            <img src="Assets/watch12.jpg" alt="watch12">
+            <h3>Omega Men's 23110422102004  </h3>
+            <p> Omega Men's 23110422102004 Seamaster150 Analog Display Swiss Automatic Silver Watch<br> Price: $980000</p>
+            <button class="add-to-cart" data-id="12" data-name="Omega Men's 23110422102004" data-price="110000">Add to Cart</button>
+        </div>		
+    </div>
+	
+	<div class="reservation-container">
+    <h2>Book a Haircut Reservation</h2>
+    <form id="reservation-form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+        
+        <label for="time">Time:</label><br>
+        <input type="time" id="time" name="time" required><br><br>
+        
+        <label for="service">Service:</label><br>
+        <select id="service" name="service" required>
+            <option value="haircut">Haircut - $2000</option>
+            <option value="beard-trim">Beard Trim - $1000</option>
+            <option value="full-service">Full Service (Haircut + Beard Trim) - $2500</option>
+			<option value="low-fade">Low Fade - $1500</option>
+			<option value="high-fad">High Fade - $1500</option>
+			<option value="taper-fade">Taper Fade - $1500</option>
+			<option value="other">Other - Call or Email for Pricing</option>
+			
+        </select><br><br>
+        
+        <button type="submit">Book Reservation</button>
+    </form>
+
+	<div id="reservation-confirmation" style="display: none;">
+		<h3>Reservation Confirmed!</h3>
+		<p id="reservation-details"></p>
+		<button id="cancel-reservation-btn">Cancel Reservation</button>
+	</div>
+
+
+
+    <div class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+
+        </ul>
+        <button id="checkout-btn">CheckOut</button>
+    </div>
+
+    <script src="products.js"></script>
+</body>
+</html>

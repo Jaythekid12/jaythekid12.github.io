@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timely Cuts Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Timely Cuts Login</h2>
+        <form id="login">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8">
+
+            <button type="submit">Login</button>
+        </form>
+
+        <button id="about-us-btn" onclick="window.location.href='aboutus.html'">About Us</button>
+        <div id="error"></div>
+    </div>
+    <script src="login.js"></script>
+	<script>
+	const users = [
+	// Sample users
+    { username: "may", password: "12345678" },
+    { username: "tay", password: "letmelogin" },
+    { username: "ray", password: "password" },
+	{ username: "jay", password: "100100100" }
+	];
+	</script>
+</body>
+</html>

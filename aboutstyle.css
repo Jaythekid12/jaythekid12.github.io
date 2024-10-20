@@ -1,0 +1,81 @@
+/* General styles for the About Us page */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1c1c1c, #0a0a0a); /* Background gradient */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #2e2e2e; /* Header background color */
+    width: 100%;
+}
+
+/* Title styles */
+h1 {
+    color: #f2f2f2;
+    font-size: 36px;
+}
+
+/* About container styles */
+.about-container {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #3a3a3a; /* Dark background for contrast */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out; /* Animation for fade-in effect */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Headings styles */
+h2, h3 {
+    color: #f44336; /* Red color for headings */
+}
+
+/* Button styles */
+#about-us-btn {
+    background: linear-gradient(135deg, #f44336, #c62828); /* Button gradient matching red theme */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#about-us-btn:hover {
+    background: linear-gradient(135deg, #ef5350, #f44336); /* Lighter red on hover */
+}
+
+/* Footer styles */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #2e2e2e; /* Footer background color */
+    width: 100%;
+}
+
+footer p {
+    color: #f2f2f2; /* Footer text color */
+}
