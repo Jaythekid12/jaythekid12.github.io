@@ -147,6 +147,6 @@ document.getElementById('logout-btn').addEventListener('click', () => {
     localStorage.removeItem('reservation'); 
 
     // Go to the login page
-    window.location.href = "Index.html";
+    window.location.href = "index.html";
 });
 
