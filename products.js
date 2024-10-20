@@ -74,7 +74,7 @@ document.getElementById('checkout-btn').addEventListener('click', () => {
     localStorage.setItem('cart', JSON.stringify(cart));
 
 	// Go to invoice page
-    window.location.href = "Invoice.html";
+    window.location.href = "invoice.html";
 });
 
 // Load cart from localStorage
