@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 1 - Information for Current Students</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f4f4f4;
+      color: #222;
+    }
+    h1 {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 30px;
+      color: #1B4332;
+    }
+    .wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border: 1px solid #ddd;
+      padding: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      height: 100%;
+    }
+    tr {
+      height: 100%;
+    }
+    td {
+      vertical-align: top;
+      padding: 10px 20px;
+    }
+    td.left-col {
+      width: 50%;
+      border-right: 2px solid #1B4332;
+    }
+    td.right-col {
+      width: 50%;
+      text-align: center;
+      padding: 0;
+    }
+    h2 {
+      font-size: 15px;
+      margin-top: 20px;
+      margin-bottom: 6px;
+      color: #1B4332;
+    }
+  ul {
+      margin: 0 0 35px 65px;
+      padding: 0;
+      list-style: none;
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    ul li {
+      position: relative;
+      margin-bottom: 2px;
+      padding-left: 15px;
+	  }
+	  
+	ul > li::before {
+      content: "-";
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    ul ul {
+      margin: 4px 0 4px 38px;
+      font-size: 15px;
+    }
+
+    ul ul li {
+      padding-left: 10px;
+      list-style-type: circle;
+      list-style-position: outside;
+      display: list-item;
+    }
+	
+	ul ul li::before {
+      content: none;
+    }
+	
+    a {
+      color: #1B4332;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #C9A84C;
+    }
+  </style>
+</head>
+<body>
+  <h1>Information for Current Students</h1>
+  <div class="wrapper">
+    <table>
+      <tr>
+        <td class="left-col">
+ 
+          <h2>Academic Resources</h2>
+          <ul class="dash">
+            <li>Handbook
+              <ul class="circle">
+                <li>Undergrad</li>
+                <li>Graduate</li>
+              </ul>
+            </li>
+            <li>Module Selection Guide</li>
+          </ul>
+ 
+          <h2>Student Services</h2>
+          <ul class="dash">
+            <li>Accommodation</li>
+            <li>Admissions</li>
+            <li>Financial Aid</li>
+            <li>Graduation</li>
+            <li>Medical Centre</li>
+          </ul>
+ 
+          <h2>Online Applications</h2>
+          <ul class="dash">
+            <li>Add/Drop</li>
+            <li><a href="page2.html">Boarding</a></li>
+            <li>Medical Centre Appointment</li>
+            <li>Fee Payment</li>
+          </ul>
+ 
+        </td>
+        <td class="right-col">
+          <img src="student.jfif" style="width:100%; height:100%; object-fit:cover; display:block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page 2 - Apply for Boarding</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f4f4f4;
+      color: #222;
+    }
+ 
+    .top-nav {
+      margin-bottom: 10px;
+      font-size: 13px;
+    }
+ 
+    .top-nav a {
+      color: #1B4332;
+      text-decoration: underline;
+      font-size: 13px;
+    }
+ 
+    h2 {
+      font-size: 18px;
+      color: #1B4332;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+ 
+    .wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border: 1px solid #ddd;
+      padding: 20px 30px;
+    }
+ 
+    table.outer {
+      width: 100%;
+      border-collapse: collapse;
+    }
+ 
+    table.outer > tbody > tr > td {
+      vertical-align: top;
+      padding: 10px 16px;
+    }
+ 
+    td.col-left {
+      width: 20%;
+      border-right: 1px solid #aaa;
+    }
+ 
+    td.col-mid {
+      width: 55%;
+      border-right: 1px solid #aaa;
+    }
+ 
+    td.col-right {
+      width: 25%;
+    }
+ 
+    .terms-link {
+      font-size: 13px;
+      font-weight: bold;
+      text-decoration: underline;
+      color: #222;
+      display: block;
+    }
+ 
+    table.form-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+ 
+    table.form-table tr td {
+      padding: 6px 4px;
+      font-size: 14px;
+      vertical-align: top;
+    }
+ 
+    table.form-table input[type="text"] {
+      width: 95%;
+      padding: 5px 8px;
+      border: 1px solid #aaa;
+      font-size: 14px;
+    }
+ 
+    table.form-table select {
+      width: 95%;
+      padding: 5px 8px;
+      border: 1px solid #aaa;
+      font-size: 14px;
+    }
+ 
+    .checkbox-group label {
+      display: block;
+      margin: 3px 0;
+      font-size: 14px;
+    }
+ 
+    .checkbox-group input {
+      margin-right: 6px;
+    }
+ 
+    .apply-btn {
+      background-color: #1B4332;
+      color: white;
+      border: none;
+      padding: 8px 24px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+ 
+    .apply-btn:hover {
+      background-color: #2D6A4F;
+    }
+ 
+    .col-right p {
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+ 
+    .contact-link {
+      font-size: 13px;
+      color: #1B4332;
+      text-decoration: underline;
+    }
+ 
+    .required {
+      color: red;
+      margin-left: 2px;
+    }
+  </style>
+</head>
+<body>
+ 
+  <div class="top-nav">
+    <a href="page1.html">Back to Student Main</a>
+  </div>
+ 
+  <h2>Apply for Boarding</h2>
+ 
+  <div class="wrapper">
+    <form method="post" action="#">
+    <table class="outer">
+      <tr>
+ 
+        <td class="col-left">
+          <a href="#" class="terms-link">TERMS & CONDITIONS</a>
+        </td>
+ 
+        <td class="col-mid">
+          <table class="form-table">
+ 
+            <tr><td>Preferred Hall/Residence</td></tr>
+            <tr>
+              <td>
+                <select name="hall">
+                  <option value="">Select</option>
+                  <option>Lionel</option>
+                  <option>Mavis</option>
+                  <option>St. Grayside</option>
+                </select>
+              </td>
+            </tr>
+ 
+            <tr><td>First Name <span class="required">*</span></td></tr>
+            <tr><td><input type="text" name="firstname" required></td></tr>
+ 
+            <tr><td>Surname <span class="required">*</span></td></tr>
+            <tr><td><input type="text" name="surname" required></td></tr>
+ 
+            <tr><td>Middle Initial</td></tr>
+            <tr><td><input type="text" name="middle" maxlength="1" style="width:30%;"></td></tr>
+ 
+            <tr><td>Gender <span class="required">*</span></td></tr>
+            <tr>
+              <td>
+                <input type="radio" name="gender" value="male" required> Male
+                <input type="radio" name="gender" value="female" style="margin-left:12px;"> Female
+              </td>
+            </tr>
+ 
+            <tr><td>Known ailments (<em>select all that apply</em>)</td></tr>
+            <tr>
+              <td>
+                <div class="checkbox-group">
+                  <label><input type="checkbox"> Wet hands</label>
+                  <label><input type="checkbox"> Smelly feet</label>
+                  <label><input type="checkbox"> Dry Eyes</label>
+                  <label><input type="checkbox"> Bright lights allergy</label>
+                </div>
+              </td>
+            </tr>
+ 
+            <tr>
+              <td>
+                <input type="checkbox" name="agree" required>
+                I have read & agree to the <a href="#" style="color:#1B4332; font-weight:bold;">Terms & Conditions</a> <span class="required">*</span>
+              </td>
+            </tr>
+ 
+            <tr>
+              <td><button class="apply-btn" type="submit">APPLY</button></td>
+            </tr>
+ 
+          </table>
+        </td>
+ 
+        <td class="col-right">
+          <p><strong>Any questions?</strong></p>
+          <p>Any member of our student services team will be happy to help</p>
+          <a href="#" class="contact-link">Contact Us</a>
+        </td>
+ 
+      </tr>
+    </table>
+    </form>
+  </div>
+ 
+</body>
+</html>
